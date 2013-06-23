@@ -61,6 +61,7 @@
 		490A07DD1775F837006F1C22 /* ios7testdevTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ios7testdevTests-Info.plist"; sourceTree = "<group>"; };
 		490A07DF1775F837006F1C22 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		490A07E11775F837006F1C22 /* ios7testdevTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ios7testdevTests.m; sourceTree = "<group>"; };
+		490A07EB1775F881006F1C22 /* ios7testdev.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = ios7testdev.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -123,6 +124,7 @@
 		490A07B51775F837006F1C22 /* ios7testdev */ = {
 			isa = PBXGroup;
 			children = (
+				490A07EB1775F881006F1C22 /* ios7testdev.entitlements */,
 				490A07BE1775F837006F1C22 /* durbachAppDelegate.h */,
 				490A07BF1775F837006F1C22 /* durbachAppDelegate.m */,
 				490A07C11775F837006F1C22 /* Main.storyboard */,
@@ -214,6 +216,17 @@
 				LastUpgradeCheck = 0500;
 				ORGANIZATIONNAME = "Marc Durbach";
 				TargetAttributes = {
+					490A07A91775F837006F1C22 = {
+						DevelopmentTeam = 345LGWJMCL;
+						SystemCapabilities = {
+							com.apple.DataProtection = {
+								enabled = 1;
+							};
+							com.apple.iCloud = {
+								enabled = 1;
+							};
+						};
+					};
 					490A07D21775F837006F1C22 = {
 						TestTargetID = 490A07A91775F837006F1C22;
 					};
@@ -391,6 +404,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_ENTITLEMENTS = ios7testdev/ios7testdev.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ios7testdev/ios7testdev-Prefix.pch";
 				INFOPLIST_FILE = "ios7testdev/ios7testdev-Info.plist";
@@ -404,6 +419,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_ENTITLEMENTS = ios7testdev/ios7testdev.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ios7testdev/ios7testdev-Prefix.pch";
 				INFOPLIST_FILE = "ios7testdev/ios7testdev-Info.plist";
